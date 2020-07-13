@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="66" viewBox="0 0 66 66">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="40" height="40" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Login_Icon" data-name="Login Icon" transform="translate(2475.001 91)">
+    <g id="Symbol_9_1" data-name="Symbol 9 – 1" transform="translate(-2462.001 -78)" clip-path="url(#clip-path)">
+      <path id="Union_1" data-name="Union 1" d="M0,40V35c0-5.5,9-10,20-10s20,4.5,20,10v5ZM10,10A10,10,0,1,1,20,20,10,10,0,0,1,10,10Z" transform="translate(0 0)" fill="#fff"/>
+    </g>
+    <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(-2475.001 -91)" fill="none" stroke="#fff" stroke-width="5">
+      <circle cx="33" cy="33" r="33" stroke="none"/>
+      <circle cx="33" cy="33" r="30.5" fill="none"/>
+    </g>
+  </g>
+</svg>

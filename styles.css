@@ -1,0 +1,752 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth; /*for a smooth scrolling when click on anchors*/
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E9E2C1;
+}
+
+@font-face {
+    font-family: VaguelyFatal;
+    src: url(Vaguely\ Fatal.ttf);
+  }
+
+  /* ------------Heading Start-------------------*/
+
+header{
+    display: flex;
+    background: #211C1C;
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+
+.nav-links, .logo-container, .search-bar, .search, .cart, .login_icon{
+    display: flex;
+}
+
+nav{
+    flex: 2;
+    margin-left: 40px;
+}
+
+.nav-links{
+    justify-content: space-around;
+    list-style: none;    
+}
+
+.nav-link{
+    font-family: VaguelyFatal;
+    font-size: 37px;
+    color: white;
+    text-decoration: none;
+    justify-content: flex-start;
+    letter-spacing: 10px;
+    transition: all 0.3s ease 0s;
+}
+.nav-link:hover{
+    color: #E9E2C1;
+}
+
+.logo-container{
+    flex: 1;
+    justify-content: center;
+    flex-grow: 2;
+    margin-left: 100px;
+}
+
+.search-bar{
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: -200px;
+}
+.search{
+    cursor: text;
+    color: white;
+    opacity: 0.43;
+    line-height: 24px;
+    font-weight: 100;
+    margin-left: 20px;
+    font-size: 25px;
+    letter-spacing: .25px;
+    border-bottom: 2px solid white;
+}
+
+.cart{
+    flex: 1;
+    justify-content: flex-end;
+    margin-left: 150px;
+}
+.cart_mouse{
+    cursor: pointer;
+}
+
+.login_icon{
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+.login_mouse{
+    cursor: pointer;
+}
+  /* ------------Heading End-------------------*/
+
+
+#parallax h1{
+    font-family: VaguelyFatal;
+    font-size: 85px;
+    font-weight: lighter;
+    line-height: 97px;
+    letter-spacing: .25px; /* (x/1000=y => char-spacing /1000 = letter-spacing) */
+    color: #562622;
+    margin: 0;
+    padding: 0 0 25px 0;
+    text-shadow: 3px 3px 10px #876D4B;
+    text-align: center;
+}
+
+hr{
+    width:50%;
+    text-align: center;
+    margin-left: 200px;
+    height:2px; /*line size*/
+    border-color: #562622;
+}
+
+#parallax p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    padding-top: 85px;
+    padding-bottom: 25px;
+    letter-spacing: .01px;
+    color: #361B19;
+}
+
+.first-character{
+    font-family: tahoma;
+    font-weight: bolder;
+    float: left;
+    font-size: 65px;
+    line-height: 64px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+.sc, .ny, .atw{ color: #562622;}
+
+#parallax .title{
+    background: white;
+    padding: 60px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#parallax .title h1{
+    font-size: 35px;
+    letter-spacing: 8px;
+}
+
+#parallax .block{
+    background-color: #E9E2C1;
+    padding: 60px;
+    width: 820px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#parallax .parallax-one{
+    padding-top: 360px;
+    padding-bottom: 360px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #E9E2C1;
+    background-image: url(./17_DeAndreJordan_0248_2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-blend-mode: luminosity;
+}
+
+
+#parallax .parallax-two{
+    padding-top: 360px;
+    padding-bottom: 360px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #B79340;
+    background-image: url(./man-fixes-shirt-cuff.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-blend-mode: luminosity;
+}
+
+#parallax .parallax-three{
+    padding-top: 360px;
+    padding-bottom: 360px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #876D4B;
+    background-image: url(./mens-business-fashion.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-blend-mode: luminosity;
+}
+
+#parallax .parallax-four{
+    padding-top: 360px;
+    padding-bottom: 360px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #361B19;
+    background-image: url(./man-wearing-blue-suit-2897883.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-blend-mode: luminosity;   
+}
+
+/*----------------Items Section Start------------------------------------*/
+.cards_container{
+    display: flex;
+    width: 100vh;
+    height: 40vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: -100px;
+
+}
+
+.card{
+    position: relative;
+    display: flex;
+    transition: .3s ease-out;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 265px;
+    height: 335px;
+    background-color: white;
+    border: 1px solid #562622;
+    cursor: pointer;
+}
+.card #pradaSuit{ /* this is a different image, control it with CSS */
+    width: 100%;
+    height: 100%;
+    background-image: url(./prada\ suit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+}
+.card #burgundySuit{ /* this is a different image, control it with CSS */
+    width: 100%;
+    height: 100%;
+    background-image: url(./Burgundy\ double\ breasted\ suit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+}
+
+
+.card img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    display: block;
+    transition: .5s;    
+}
+
+/*------------Fix images Size-for every item Start-------------*/
+/*----Watches------------*/
+#boss{
+    width: 223px;
+    height: 335px;
+    margin-left: 20px;
+}
+#henry{
+    width: 254px;
+    height: 286px;
+    margin: 40px 10px 0 0;
+}
+#armani{
+    width: 210px;
+    height: 315px;
+    margin: 15px 0 0 20px;
+}
+/*---Shoes---------------*/
+#russellBromley{
+    width: 248px;
+    height: 248px;
+    margin-top: 50px;
+}
+#dolceGabbana{
+    width: 243.59px;
+    height: 222.28px;
+    margin-top: 60px;
+}
+#loake{
+    width: 230.21px;
+    height: 230.21px;
+    margin-top: 60px;
+}
+/*----Suits--------------*/
+#armaniSuit{
+    width: 265px;
+    height: 335px;
+}
+/*------------Fix images Size-for every item End-------------*/
+
+.card p{ 
+    margin-top: 300px;
+    padding-left: 10px;
+    margin-left: -40px; 
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 9px;
+
+    color: #7C574F;
+}
+
+.card:hover .content{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+
+}
+.card .content{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0px;    /* 0px to complete pushed down-disappear */
+    background: #B79340;
+    transition: .8s ease-in-out; /* or lively as: all .5s cubic-bezier(.48, -0.28, 0.41, 1.4); */ 
+    box-sizing: border-box;
+    overflow: hidden;
+    opacity: .87;
+}
+
+.content h3{
+    font-size: 67px;
+    font-weight: normal;
+    font-family: VaguelyFatal;
+    
+    color: #E9E2C1;
+
+    text-align: center;
+    margin-top: 47px;
+}
+
+.content h4{
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    
+    color: #562622;
+
+    text-align: center;
+    margin-top: 47px;
+}
+
+.content .button{
+    font-size: 16px;
+    font-weight: bolder;
+
+    background-color: #562622;
+    color: white;
+
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 50px;
+    padding-top: 12px;
+    
+
+    width: 163px;
+    height: 43px;
+
+    cursor: pointer;
+}
+/*----------------Items Section End------------------------------------*/
+
+  /* ------------Footer Start-------------------*/
+footer{
+    display: flex;
+    background: #211C1C;
+    width: 100%;
+    height: 20vh;
+    margin: auto;
+    align-items: center;
+}
+
+.company_name, .social_media{
+    display: flex;
+}
+
+.company_name{
+        flex: 1;
+        margin-left: 40px;  
+    
+        justify-content: flex-start;
+}
+
+.social_media{
+     flex: 1;
+     justify-content: space-between;
+     margin-right: 100px;
+}
+
+.social_media img{
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.social_media img:hover{
+     transform: scale(1.5,1.5);
+}
+  /* ------------Footer End-------------------*/
+
+  /* for phones*/
+/* not @media screen and (max-width: 1024px){ */
+@media (min-width: 481px) and (max-width: 767px){
+   
+    /*==========header================*/
+    header{
+        height: 25vh;
+    }
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-link{
+        font-size: 20px;
+        line-height: 2.6;
+
+    }
+
+    .logo-container{
+        margin-top: -100px;
+        margin-left: 50px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .search-bar{
+        flex: 1;
+        margin-left: -80px;
+        margin-top: 100px;
+    }
+
+    .search-bar img{
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+    }
+    .search{
+        line-height: 15px;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    
+    .cart{
+        
+        margin-left: 300px;
+        margin-top: -100px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .login_icon{
+        margin-left: -50px;
+        margin-top: 100px;
+        width: 50px;
+        height: 50px;
+    }
+
+    /*==========main================*/
+
+    section{
+        overflow: hidden;
+    }
+
+    #parallax h1{
+        font-size: 45px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    hr{
+        margin-left: 100px;
+    }
+    
+    #parallax p{
+        font-size: 12px;
+        padding: 30px 50px 30px 50px; 
+    }
+    
+    #parallax .block{
+        background-color: #E9E2C1;
+        padding: 60px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: justify;
+        overflow: hidden;
+    }
+    
+    #parallax .parallax-one{
+        padding-top: 160px;
+        padding-bottom: 160px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+    
+    
+    #parallax .parallax-two{
+        padding-top: 160px;
+        padding-bottom: 160px;
+        position: relative;
+        width: 100%;
+    }
+    
+    #parallax .parallax-three{
+        padding-top: 160px;
+        padding-bottom: 160px;
+        position: relative;
+        width: 100%;
+    }
+    
+    #parallax .parallax-four{
+        padding-top: 160px;
+        padding-bottom: 160px;
+        position: relative;
+        width: 100%;
+    }
+    
+
+    /*-================Items Section===================*/
+    .cards_container{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100vh;
+        align-content: center;
+        margin: 0 -70px 0 -70px;
+    }
+
+    .card{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 165px;
+        height: 235px;
+    }
+
+
+    .card img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        align-items: center;
+        display: block;
+        transition: none;        
+    }
+
+    /*------------Fix images Size-for every item Start-------------*/
+    /*----Watches------------*/
+    #boss{
+        width: 123px;
+        height: 210px;
+        margin-left: 20px;
+    }
+    #henry{
+        width: 154px;
+        height: 186px;
+        margin: 40px 10px 0 0;
+    }
+    #armani{
+        width: 110px;
+        height: 200px;
+        margin: 15px 0 0 20px;
+    }
+    /*---Shoes---------------*/
+    #russellBromley{
+        width: 124px;
+        height: 124px;
+        margin-left: 20px;
+    }
+    #dolceGabbana{
+        width: 121.795px;
+        height: 111.14px;
+        margin-left: 20px;
+    }
+    #loake{
+        width: 115.105px;
+        height: 115.105px;
+        margin-left: 20px;
+    }
+    /*----Suits--------------*/
+    #armaniSuit{
+        width: 165px;
+        height: 235px;
+    }
+    /*------------Fix images Size-for every item End-------------*/
+
+    .card p{ 
+        margin-top: 250px;
+        margin-left: -50px; 
+        margin-bottom: -20px;
+        margin-right: -50px;
+    }
+
+    .card .content{
+        position: absolute;
+        left: 100%;
+        bottom: 0;
+        width: 100%;
+        height: 100%;  
+        box-sizing: border-box;
+        transition: none;
+        opacity: 1;
+    }
+
+    .card:hover .content{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        bottom: 0;
+
+    }
+
+    .content h3{
+        font-size: 33.5px;
+        margin-top: 47px;
+    }
+
+    .content h4{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .content .button{
+        font-size: 16px;
+        margin-left: 0px;
+        margin-top: 50px;
+        padding-top: 12px;
+        cursor: pointer;
+    }
+
+
+    /* ============footer=================*/
+
+    .company_name{
+            flex: 1;
+            margin-left: 40px;  
+            margin-top: 20px;
+            justify-content: flex-start;
+    }
+
+    .company_name img{
+        width: 150px;
+        height: 50px;
+    }
+
+    .social_media img{
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+        margin-left: -100px;
+        
+    }
+
+    }
+
+    /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+    */
+@media (min-width: 768px) and (max-width: 1024px) {
+     /*==========header================*/
+     header{
+        height: 20vh;
+    }
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-link{
+        font-size: 25px;
+        line-height: 2.1;
+
+    }
+
+    .logo-container{
+        margin-top: -50px;
+        margin-left: -50px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .search-bar{
+        flex: 1;
+        margin-left: -250px;
+        margin-top: 100px;
+    }
+
+    .search-bar img{
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+    }
+    .search{
+        line-height: 40px;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    
+    .cart{
+        
+        margin-left: 300px;
+        margin-top: -10px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .login_icon{
+        margin-left: -50px;
+        margin-top: -10px;
+        width: 50px;
+        height: 50px;
+    }
+}
